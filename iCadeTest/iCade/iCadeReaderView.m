@@ -60,12 +60,18 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
         int index = p-ON_STATES;
         _iCadeState |= (1 << index);
         stateChanged = true;
+        if (_delegateFlags.buttonDown) {
+            [_delegate buttonDown:(1 << index)];
+        }
     } else {
         p = strchr(OFF_STATES, ch);
         if (p) {
             int index = p-OFF_STATES;
             _iCadeState &= ~(1 << index);
             stateChanged = true;
+            if (_delegateFlags.buttonUp) {
+                [_delegate buttonUp:(1 << index)];
+            }
         }
     }
 
