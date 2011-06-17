@@ -17,7 +17,14 @@
 		05059C9A13AB035F00A09408 /* iCadeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05059C9913AB035F00A09408 /* iCadeTestViewController.m */; };
 		05059C9D13AB035F00A09408 /* iCadeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05059C9B13AB035F00A09408 /* iCadeTestViewController.xib */; };
 		05059CAC13AB03AB00A09408 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05059CAB13AB03AB00A09408 /* iCadeReaderView.m */; };
-		05059CB913AB0A5E00A09408 /* iCadeState.c in Sources */ = {isa = PBXBuildFile; fileRef = 05059CB713AB0A5E00A09408 /* iCadeState.c */; };
+		05059CC713AB20E100A09408 /* button-down.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CC513AB20E000A09408 /* button-down.png */; };
+		05059CC813AB20E100A09408 /* button-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CC613AB20E000A09408 /* button-up.png */; };
+		05059CCB13AB223A00A09408 /* button-down-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CC913AB223A00A09408 /* button-down-black.png */; };
+		05059CCC13AB223A00A09408 /* button-up-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CCA13AB223A00A09408 /* button-up-black.png */; };
+		05059CCF13AB23B300A09408 /* button-down-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CCD13AB23B300A09408 /* button-down-white.png */; };
+		05059CD013AB23B300A09408 /* button-up-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CCE13AB23B300A09408 /* button-up-white.png */; };
+		05059CD213AB2BCF00A09408 /* red-ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CD113AB2BCF00A09408 /* red-ball.png */; };
+		05059CD413AB34B300A09408 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 05059CD313AB34B300A09408 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +44,15 @@
 		05059C9C13AB035F00A09408 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iCadeTestViewController.xib; sourceTree = "<group>"; };
 		05059CAA13AB03AB00A09408 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
 		05059CAB13AB03AB00A09408 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
-		05059CB713AB0A5E00A09408 /* iCadeState.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iCadeState.c; sourceTree = "<group>"; };
 		05059CB813AB0A5E00A09408 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
+		05059CC513AB20E000A09408 /* button-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down.png"; sourceTree = "<group>"; };
+		05059CC613AB20E000A09408 /* button-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-up.png"; sourceTree = "<group>"; };
+		05059CC913AB223A00A09408 /* button-down-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down-black.png"; sourceTree = "<group>"; };
+		05059CCA13AB223A00A09408 /* button-up-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-up-black.png"; sourceTree = "<group>"; };
+		05059CCD13AB23B300A09408 /* button-down-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-down-white.png"; sourceTree = "<group>"; };
+		05059CCE13AB23B300A09408 /* button-up-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-up-white.png"; sourceTree = "<group>"; };
+		05059CD113AB2BCF00A09408 /* red-ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-ball.png"; sourceTree = "<group>"; };
+		05059CD313AB34B300A09408 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,8 @@
 		05059C8A13AB035F00A09408 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				05059CD313AB34B300A09408 /* Icon.png */,
+				05059CC413AB20E000A09408 /* images */,
 				05059C8B13AB035F00A09408 /* iCadeTest-Info.plist */,
 				05059C8C13AB035F00A09408 /* InfoPlist.strings */,
 				05059C8F13AB035F00A09408 /* iCadeTest-Prefix.pch */,
@@ -113,10 +129,23 @@
 			children = (
 				05059CAA13AB03AB00A09408 /* iCadeReaderView.h */,
 				05059CAB13AB03AB00A09408 /* iCadeReaderView.m */,
-				05059CB713AB0A5E00A09408 /* iCadeState.c */,
 				05059CB813AB0A5E00A09408 /* iCadeState.h */,
 			);
 			path = iCade;
+			sourceTree = "<group>";
+		};
+		05059CC413AB20E000A09408 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				05059CD113AB2BCF00A09408 /* red-ball.png */,
+				05059CCD13AB23B300A09408 /* button-down-white.png */,
+				05059CCE13AB23B300A09408 /* button-up-white.png */,
+				05059CC913AB223A00A09408 /* button-down-black.png */,
+				05059CCA13AB223A00A09408 /* button-up-black.png */,
+				05059CC513AB20E000A09408 /* button-down.png */,
+				05059CC613AB20E000A09408 /* button-up.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +201,14 @@
 				05059C8E13AB035F00A09408 /* InfoPlist.strings in Resources */,
 				05059C9713AB035F00A09408 /* MainWindow.xib in Resources */,
 				05059C9D13AB035F00A09408 /* iCadeTestViewController.xib in Resources */,
+				05059CC713AB20E100A09408 /* button-down.png in Resources */,
+				05059CC813AB20E100A09408 /* button-up.png in Resources */,
+				05059CCB13AB223A00A09408 /* button-down-black.png in Resources */,
+				05059CCC13AB223A00A09408 /* button-up-black.png in Resources */,
+				05059CCF13AB23B300A09408 /* button-down-white.png in Resources */,
+				05059CD013AB23B300A09408 /* button-up-white.png in Resources */,
+				05059CD213AB2BCF00A09408 /* red-ball.png in Resources */,
+				05059CD413AB34B300A09408 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +223,6 @@
 				05059C9413AB035F00A09408 /* iCadeTestAppDelegate.m in Sources */,
 				05059C9A13AB035F00A09408 /* iCadeTestViewController.m in Sources */,
 				05059CAC13AB03AB00A09408 /* iCadeReaderView.m in Sources */,
-				05059CB913AB0A5E00A09408 /* iCadeState.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
