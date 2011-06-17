@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05059C8413AB035F00A09408 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05059C8313AB035F00A09408 /* UIKit.framework */; };
+		05059C8613AB035F00A09408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05059C8513AB035F00A09408 /* Foundation.framework */; };
+		05059C8813AB035F00A09408 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05059C8713AB035F00A09408 /* CoreGraphics.framework */; };
+		05059C8E13AB035F00A09408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05059C8C13AB035F00A09408 /* InfoPlist.strings */; };
+		05059C9113AB035F00A09408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05059C9013AB035F00A09408 /* main.m */; };
+		05059C9413AB035F00A09408 /* iCadeTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05059C9313AB035F00A09408 /* iCadeTestAppDelegate.m */; };
+		05059C9713AB035F00A09408 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05059C9513AB035F00A09408 /* MainWindow.xib */; };
+		05059C9A13AB035F00A09408 /* iCadeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05059C9913AB035F00A09408 /* iCadeTestViewController.m */; };
+		05059C9D13AB035F00A09408 /* iCadeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05059C9B13AB035F00A09408 /* iCadeTestViewController.xib */; };
+		05059CAC13AB03AB00A09408 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05059CAB13AB03AB00A09408 /* iCadeReaderView.m */; };
+		05059CB913AB0A5E00A09408 /* iCadeState.c in Sources */ = {isa = PBXBuildFile; fileRef = 05059CB713AB0A5E00A09408 /* iCadeState.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05059C7F13AB035F00A09408 /* iCadeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCadeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05059C8313AB035F00A09408 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		05059C8513AB035F00A09408 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		05059C8713AB035F00A09408 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		05059C8B13AB035F00A09408 /* iCadeTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCadeTest-Info.plist"; sourceTree = "<group>"; };
+		05059C8D13AB035F00A09408 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05059C8F13AB035F00A09408 /* iCadeTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCadeTest-Prefix.pch"; sourceTree = "<group>"; };
+		05059C9013AB035F00A09408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05059C9213AB035F00A09408 /* iCadeTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCadeTestAppDelegate.h; sourceTree = "<group>"; };
+		05059C9313AB035F00A09408 /* iCadeTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCadeTestAppDelegate.m; sourceTree = "<group>"; };
+		05059C9613AB035F00A09408 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		05059C9813AB035F00A09408 /* iCadeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCadeTestViewController.h; sourceTree = "<group>"; };
+		05059C9913AB035F00A09408 /* iCadeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCadeTestViewController.m; sourceTree = "<group>"; };
+		05059C9C13AB035F00A09408 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iCadeTestViewController.xib; sourceTree = "<group>"; };
+		05059CAA13AB03AB00A09408 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
+		05059CAB13AB03AB00A09408 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
+		05059CB713AB0A5E00A09408 /* iCadeState.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iCadeState.c; sourceTree = "<group>"; };
+		05059CB813AB0A5E00A09408 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05059C7C13AB035F00A09408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05059C8413AB035F00A09408 /* UIKit.framework in Frameworks */,
+				05059C8613AB035F00A09408 /* Foundation.framework in Frameworks */,
+				05059C8813AB035F00A09408 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05059C7413AB035F00A09408 = {
+			isa = PBXGroup;
+			children = (
+				05059C8913AB035F00A09408 /* iCadeTest */,
+				05059C8213AB035F00A09408 /* Frameworks */,
+				05059C8013AB035F00A09408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05059C8013AB035F00A09408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05059C7F13AB035F00A09408 /* iCadeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05059C8213AB035F00A09408 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05059C8313AB035F00A09408 /* UIKit.framework */,
+				05059C8513AB035F00A09408 /* Foundation.framework */,
+				05059C8713AB035F00A09408 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05059C8913AB035F00A09408 /* iCadeTest */ = {
+			isa = PBXGroup;
+			children = (
+				05059CA913AB037A00A09408 /* iCade */,
+				05059C9213AB035F00A09408 /* iCadeTestAppDelegate.h */,
+				05059C9313AB035F00A09408 /* iCadeTestAppDelegate.m */,
+				05059C9513AB035F00A09408 /* MainWindow.xib */,
+				05059C9813AB035F00A09408 /* iCadeTestViewController.h */,
+				05059C9913AB035F00A09408 /* iCadeTestViewController.m */,
+				05059C9B13AB035F00A09408 /* iCadeTestViewController.xib */,
+				05059C8A13AB035F00A09408 /* Supporting Files */,
+			);
+			path = iCadeTest;
+			sourceTree = "<group>";
+		};
+		05059C8A13AB035F00A09408 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05059C8B13AB035F00A09408 /* iCadeTest-Info.plist */,
+				05059C8C13AB035F00A09408 /* InfoPlist.strings */,
+				05059C8F13AB035F00A09408 /* iCadeTest-Prefix.pch */,
+				05059C9013AB035F00A09408 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05059CA913AB037A00A09408 /* iCade */ = {
+			isa = PBXGroup;
+			children = (
+				05059CAA13AB03AB00A09408 /* iCadeReaderView.h */,
+				05059CAB13AB03AB00A09408 /* iCadeReaderView.m */,
+				05059CB713AB0A5E00A09408 /* iCadeState.c */,
+				05059CB813AB0A5E00A09408 /* iCadeState.h */,
+			);
+			path = iCade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05059C7E13AB035F00A09408 /* iCadeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05059CA013AB035F00A09408 /* Build configuration list for PBXNativeTarget "iCadeTest" */;
+			buildPhases = (
+				05059C7B13AB035F00A09408 /* Sources */,
+				05059C7C13AB035F00A09408 /* Frameworks */,
+				05059C7D13AB035F00A09408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCadeTest;
+			productName = iCadeTest;
+			productReference = 05059C7F13AB035F00A09408 /* iCadeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05059C7613AB035F00A09408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Manomio LLC";
+			};
+			buildConfigurationList = 05059C7913AB035F00A09408 /* Build configuration list for PBXProject "iCadeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05059C7413AB035F00A09408;
+			productRefGroup = 05059C8013AB035F00A09408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05059C7E13AB035F00A09408 /* iCadeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05059C7D13AB035F00A09408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05059C8E13AB035F00A09408 /* InfoPlist.strings in Resources */,
+				05059C9713AB035F00A09408 /* MainWindow.xib in Resources */,
+				05059C9D13AB035F00A09408 /* iCadeTestViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05059C7B13AB035F00A09408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05059C9113AB035F00A09408 /* main.m in Sources */,
+				05059C9413AB035F00A09408 /* iCadeTestAppDelegate.m in Sources */,
+				05059C9A13AB035F00A09408 /* iCadeTestViewController.m in Sources */,
+				05059CAC13AB03AB00A09408 /* iCadeReaderView.m in Sources */,
+				05059CB913AB0A5E00A09408 /* iCadeState.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05059C8C13AB035F00A09408 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05059C8D13AB035F00A09408 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05059C9513AB035F00A09408 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05059C9613AB035F00A09408 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		05059C9B13AB035F00A09408 /* iCadeTestViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05059C9C13AB035F00A09408 /* en */,
+			);
+			name = iCadeTestViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05059C9E13AB035F00A09408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		05059C9F13AB035F00A09408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		05059CA113AB035F00A09408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCadeTest/iCadeTest-Prefix.pch";
+				INFOPLIST_FILE = "iCadeTest/iCadeTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		05059CA213AB035F00A09408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCadeTest/iCadeTest-Prefix.pch";
+				INFOPLIST_FILE = "iCadeTest/iCadeTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05059C7913AB035F00A09408 /* Build configuration list for PBXProject "iCadeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05059C9E13AB035F00A09408 /* Debug */,
+				05059C9F13AB035F00A09408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05059CA013AB035F00A09408 /* Build configuration list for PBXNativeTarget "iCadeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05059CA113AB035F00A09408 /* Debug */,
+				05059CA213AB035F00A09408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05059C7613AB035F00A09408 /* Project object */;
+}
