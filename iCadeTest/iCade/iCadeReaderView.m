@@ -40,11 +40,6 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
     return YES; 
 }
 
-//- (void) drawRect:(CGRect)rect 
-//{
-// This space intentionally left blank. Woot.
-//}
-
 - (UIView*) inputView {
     return inputView;
 }
@@ -103,7 +98,7 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
 }
 
 - (void)deleteBackward {
-    // This space intentionally left blank to complete protocol. Woot.
+    // This space intentionally left blank to complete protocol
 }
 
 @end
