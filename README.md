@@ -14,6 +14,16 @@ to ensure it receives the events from the iCade.  You can either read the `iCade
 property to determine the current state, or implement the `iCadeEventDelegate` protocol on your target
 to receive appropriate notifications.
 
+### Note:
+When `applicationWillResignActive:` is called, be sure to
+
+	[iCadeReaderView resignFirstResponder];
+
+When `applicationDidBecomeActive:` do the following to ensure the `iCadeReaderView` receives events again:
+
+	[iCadeReaderView becomeFirstResponder];
+
+
 ##License
 Copyright (C) 2011 by Stuart Carnie
 
