@@ -1,10 +1,10 @@
-#iCade-iOS
+# iCade-iOS
 Project which demonstrates using iCade with iPad.
 
-##Demo
+## Demo
 Pair up you iCade, run the project and you're off.
 
-##Usage
+## Usage
 To use in your own app, copy the following 3 files from the iCade folder:
 
 * `iCadeReaderView.h`, `iCadeReaderView.m` and `iCadeState.h`
@@ -23,8 +23,25 @@ When `applicationDidBecomeActive:` do the following to ensure the `iCadeReaderVi
 
 	[iCadeReaderView becomeFirstResponder];
 
+## Hardware Compatibility
+* iCADE, 
+* iControlPad with [this firmware](http://boards.openpandora.org/index.php?/topic/4057-icade-taking-off/page__view__findpost__p__75595)
 
-##License
+### Mapping
+
+Directional controls are the same.  8 buttons are mapped as follows:
+
+	iCADE		iControlPad
+	A			A
+	B			B
+	C			X
+	D			Y
+	E			RIGHT SHOULDER
+	F			LEFT SHOULDER
+	G			START
+	H			SELECT
+
+## License
 Copyright (C) 2011 by Stuart Carnie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
