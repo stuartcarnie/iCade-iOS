@@ -24,8 +24,8 @@ When `applicationDidBecomeActive:` do the following to ensure the `iCadeReaderVi
 	[iCadeReaderView becomeFirstResponder];
 
 ## Hardware Compatibility
-* iCADE, 
-* iControlPad with [this firmware](http://boards.openpandora.org/index.php?/topic/4057-icade-taking-off/page__view__findpost__p__75595)
+* [iCADE](http://www.thinkgeek.com/electronics/retro-gaming/e762/), 
+* [iControlPad](http://icontrolpad.com/home) with [this firmware](http://boards.openpandora.org/index.php?/topic/4057-icade-taking-off/page__view__findpost__p__75595)
 
 ### Mapping
 
