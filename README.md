@@ -25,21 +25,21 @@ When `applicationDidBecomeActive:` do the following to ensure the `iCadeReaderVi
 
 ## Hardware Compatibility
 * [iCADE](http://www.thinkgeek.com/electronics/retro-gaming/e762/), 
-* [iControlPad](http://icontrolpad.com/home) with [this firmware](http://boards.openpandora.org/index.php?/topic/4057-icade-taking-off/page__view__findpost__p__75595)
+* [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.0](http://icontrolpad.com/support)
 
 ### Mapping
 
 Directional controls are the same.  8 buttons are mapped as follows:
 
 	iCADE		iControlPad
-	A			A
+	A			START
 	B			B
-	C			X
+	C			SELECT
 	D			Y
 	E			RIGHT SHOULDER
 	F			LEFT SHOULDER
-	G			START
-	H			SELECT
+	G			A
+	H			X
 
 ## License
 Copyright (C) 2011 by Stuart Carnie
