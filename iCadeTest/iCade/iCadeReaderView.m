@@ -25,19 +25,56 @@
 static const char *ON_STATES  = "wdxayhujikol";
 static const char *OFF_STATES = "eczqtrfnmpgv";
 
+@interface iCadeReaderView()
+
+- (void)didEnterBackground;
+- (void)didBecomeActive;
+
+@end
+
 @implementation iCadeReaderView
 
-@synthesize iCadeState=_iCadeState, delegate=_delegate;
+@synthesize iCadeState=_iCadeState, delegate=_delegate, active;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     inputView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+    
     return self;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+    [super dealloc];
+}
+
+- (void)didEnterBackground {
+    if (self.active)
+        [self resignFirstResponder];
+}
+
+- (void)didBecomeActive {
+    if (self.active)
+        [self becomeFirstResponder];
 }
 
 - (BOOL)canBecomeFirstResponder { 
     return YES; 
+}
+
+- (void)setActive:(BOOL)value {
+    if (active == value) return;
+    
+    active = value;
+    if (active) {
+        [self becomeFirstResponder];
+    } else {
+        [self resignFirstResponder];
+    }
 }
 
 - (UIView*) inputView {

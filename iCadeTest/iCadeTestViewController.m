@@ -64,7 +64,7 @@
     [super viewDidLoad];
     iCadeReaderView *control = [[iCadeReaderView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:control];
-    [control becomeFirstResponder];
+    control.active = YES;
     control.delegate = self;
     [control release];    
     _stickCenter = stick.center;
