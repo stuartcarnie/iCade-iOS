@@ -9,10 +9,11 @@ To use in your own app, copy the following 3 files from the iCade folder:
 
 * `iCadeReaderView.h`, `iCadeReaderView.m` and `iCadeState.h`
 
-Add an instance of `iCadeReaderView` to your main game view, and call `[iCadeReaderView becomeFirstResponder]`
-to ensure it receives the events from the iCade.  You can either read the `iCadeReaderView.iCadeState`
-property to determine the current state, or implement the `iCadeEventDelegate` protocol on your target
-to receive appropriate notifications.
+Add an instance of `iCadeReaderView` to your main game view.  Set `view.active = YES` to ensure 
+the view receives events from the controller.  In addition, when active, the view will 
+automatically handle `didEnterBackground` and `didBecomeActive` notifications, to avoid loss of events.  
+You can either read the `iCadeReaderView.iCadeState` property to determine the current state, or 
+implement the `iCadeEventDelegate` protocol on your target to receive appropriate notifications.
 
 ### Note:
 When `applicationWillResignActive:` is called, be sure to
