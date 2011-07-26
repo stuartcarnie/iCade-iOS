@@ -15,15 +15,6 @@ automatically handle `didEnterBackground` and `didBecomeActive` notifications, t
 You can either read the `iCadeReaderView.iCadeState` property to determine the current state, or 
 implement the `iCadeEventDelegate` protocol on your target to receive appropriate notifications.
 
-### Note:
-When `applicationWillResignActive:` is called, be sure to
-
-	[iCadeReaderView resignFirstResponder];
-
-When `applicationDidBecomeActive:` do the following to ensure the `iCadeReaderView` receives events again:
-
-	[iCadeReaderView becomeFirstResponder];
-
 ## Hardware Compatibility
 * [iCADE](http://www.thinkgeek.com/electronics/retro-gaming/e762/), 
 * [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.0](http://icontrolpad.com/support)
