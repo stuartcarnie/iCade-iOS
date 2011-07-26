@@ -1,8 +1,8 @@
-# iCade-iOS
-Project which demonstrates using iCade with iPad.
+# iCADE-iOS
+Project which demonstrates using the iCADE and iControlPad with iOS devices.
 
 ## Demo
-Pair up you iCade, run the project and you're off.
+Pair up you iCADE or iControlPad, run the project and you're off.
 
 ## Usage
 To use in your own app, copy the following 3 files from the iCade folder:
@@ -20,8 +20,9 @@ implement the `iCadeEventDelegate` protocol on your target to receive appropriat
 * [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.0](http://icontrolpad.com/support)
 
 ### Mapping
+Lists the mapping between various controllers.  Directional controls are the same.  
 
-Directional controls are the same.  8 buttons are mapped as follows:
+8 buttons are mapped as follows:
 
 	iCADE		iControlPad
 	A			START
