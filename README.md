@@ -33,6 +33,11 @@ Lists the mapping between various controllers.  Directional controls are the sam
 	F			LEFT SHOULDER
 	G			A
 	H			X
+	
+The iCADE button layout is:
+
+	A C E G
+	B D F H
 
 ## License
 Copyright (C) 2011 by Stuart Carnie
