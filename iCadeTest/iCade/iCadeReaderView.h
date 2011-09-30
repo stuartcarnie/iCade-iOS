@@ -51,6 +51,7 @@
     UIView                  *inputView;
     iCadeState              _iCadeState;
     id<iCadeEventDelegate>  _delegate;
+    NSTimer *_actionLoop;
     
     struct {
         bool stateChanged:1;
@@ -62,5 +63,6 @@
 @property (nonatomic, assign) iCadeState iCadeState;
 @property (nonatomic, assign) id<iCadeEventDelegate> delegate;
 @property (nonatomic, assign) BOOL active;
+@property (nonatomic, retain) NSTimer *actionLoop;
 
 @end
