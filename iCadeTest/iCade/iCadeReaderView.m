@@ -38,7 +38,7 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    inputView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+    inputView = [[UIView alloc] initWithFrame:CGRectZero];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
