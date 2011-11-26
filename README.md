@@ -20,19 +20,20 @@ implement the `iCadeEventDelegate` protocol on your target to receive appropriat
 * [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.0](http://icontrolpad.com/support)
 
 ### Mapping
-Lists the mapping between various controllers.  Directional controls are the same.  
+Lists the mapping between various controllers.  Directional controls are the same.  It is recommended 
+you use the latest [v2.1a](http://boards.openpandora.org/index.php?/topic/5137-new-icp-test-firmware-v21/page__view__findpost__p__89228) iControlPad firmware for better button mappings.
 
 8 buttons are mapped as follows:
 
-	iCADE		iControlPad
-	A			START
-	B			B
-	C			SELECT
-	D			Y
-	E			RIGHT SHOULDER
-	F			LEFT SHOULDER
-	G			A
-	H			X
+	iCADE		iControlPad (v2.0)	iControlPad (2.1a)
+	A			START				SELECT
+	B			B					START
+	C			SELECT				LEFT SHOULDER
+	D			Y					RIGHT SHOULDER
+	E			RIGHT SHOULDER		Y
+	F			LEFT SHOULDER		B
+	G			A					X
+	H			X					A
 	
 The iCADE button layout is:
 
