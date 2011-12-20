@@ -18,7 +18,7 @@ implement the `iCadeEventDelegate` protocol on your target to receive appropriat
 ## Hardware Compatibility
 * [iCADE](http://www.thinkgeek.com/electronics/retro-gaming/e762/), 
 * [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.0](http://icontrolpad.com/support)
-* [Gametel](http://gametel.eu/index.php/english)
+* [Gametel](http://gametelcontroller.com/index.php/support/developer)
 
 ### Mapping
 Lists the mapping between various controllers.  Directional controls are the same.  It is recommended 
