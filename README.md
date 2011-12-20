@@ -2,7 +2,7 @@
 Project which demonstrates using the iCADE and iControlPad with iOS devices.
 
 ## Demo
-Pair up you iCADE or iControlPad, run the project and you're off.
+Pair up you iCADE, iControlPad or Gametel controller, run the project and you're off.
 
 ## Usage
 To use in your own app, copy the following 3 files from the iCade folder:
