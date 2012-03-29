@@ -17,7 +17,7 @@ implement the `iCadeEventDelegate` protocol on your target to receive appropriat
 
 ## Hardware Compatibility
 * [iCADE](http://www.thinkgeek.com/electronics/retro-gaming/e762/), 
-* [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.0](http://icontrolpad.com/support)
+* [iControlPad](http://icontrolpad.com/home) with [firmware revision 2.3](http://boards.openpandora.org/index.php?/topic/5137-new-icp-test-firmware-v21/page__view__findpost__p__125398)
 * [Gametel](http://gametelcontroller.com/index.php/support/developer)
 
 ### Mapping
