@@ -26,15 +26,15 @@ you use the latest [v2.3](http://boards.openpandora.org/index.php?/topic/5137-ne
 
 8 buttons are mapped as follows:
 
-	iCADE    iControlPad (v2.0)     iControlPad (2.1a)
-	A        START                  SELECT
-	B        B                      LEFT SHOULDER
-	C        SELECT                 START
-	D        Y                      RIGHT SHOULDER
-	E        RIGHT SHOULDER         Y
-	F        LEFT SHOULDER          A
-	G        A                      B
-	H        X                      X
+	iCADE    iControlPad (2.1a, 2.3), Gametel
+	A        SELECT
+	B        LEFT SHOULDER
+	C        START
+	D        RIGHT SHOULDER
+	E        Y
+	F        A
+	G        B
+	H        X
 	
 The iCADE button layout is:
 
