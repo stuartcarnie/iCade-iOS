@@ -1,5 +1,5 @@
 # iCADE-iOS
-Project which demonstrates using the iCADE and iControlPad with iOS devices.
+Project which demonstrates using the iCADE, iControlPad and Gametel with iOS devices.
 
 ## Demo
 Pair up you iCADE, iControlPad or Gametel controller, run the project and you're off.
@@ -22,7 +22,7 @@ implement the `iCadeEventDelegate` protocol on your target to receive appropriat
 
 ### Mapping
 Lists the mapping between various controllers.  Directional controls are the same.  It is recommended 
-you use the latest [v2.1a](http://boards.openpandora.org/index.php?/topic/5137-new-icp-test-firmware-v21/page__view__findpost__p__89228) iControlPad firmware for better button mappings.
+you use the latest [v2.3](http://boards.openpandora.org/index.php?/topic/5137-new-icp-test-firmware-v21/page__view__findpost__p__125398) iControlPad firmware and start the device by holding down A+B+Y then START.  This firmware will be official soon.
 
 8 buttons are mapped as follows:
 
@@ -42,7 +42,7 @@ The iCADE button layout is:
 	B D F H
 
 ## License
-Copyright (C) 2011 by Stuart Carnie
+Copyright (C) 2011, 2012 by Stuart Carnie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
