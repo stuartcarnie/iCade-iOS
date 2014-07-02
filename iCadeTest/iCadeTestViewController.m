@@ -144,7 +144,42 @@
                 center.x += offset;
             }
             break;
-            
+        case iCadeJoystickDownLeft:
+            if (state) {
+                center.x -= offset;
+                center.y += offset;
+            } else {
+                center.x += offset;
+                center.y -= offset;                
+            }
+            break;
+        case iCadeJoystickDownRight:
+            if (state) {
+                center.x += offset;
+                center.y += offset;
+            } else {
+                center.x -= offset;
+                center.y -= offset;                
+            }
+            break;
+        case iCadeJoystickUpLeft:
+            if (state) {
+                center.x -= offset;
+                center.y -= offset;
+            } else {
+                center.x += offset;
+                center.y += offset;                
+            }
+            break;
+        case iCadeJoystickUpRight:
+            if (state) {
+                center.x += offset;
+                center.y -= offset;
+            } else {
+                center.x -= offset;
+                center.y += offset;                
+            }
+            break;
         default:
             break;
     }

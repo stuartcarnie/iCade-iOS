@@ -24,6 +24,10 @@
 
 static const char *ON_STATES  = "wdxayhujikol";
 static const char *OFF_STATES = "eczqtrfnmpgv";
+static const iCadeState ICADE_STATES[] = {iCadeJoystickDownLeft, iCadeJoystickDownRight, iCadeJoystickUpLeft,iCadeJoystickUpRight,
+    iCadeJoystickUp, iCadeJoystickDown, iCadeJoystickLeft, iCadeJoystickRight,
+    iCadeButtonA, iCadeButtonB, iCadeButtonC, iCadeButtonD,
+    iCadeButtonE, iCadeButtonF, iCadeButtonG, iCadeButtonH}; 
 
 @interface iCadeReaderView()
 
@@ -34,7 +38,7 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
 
 @implementation iCadeReaderView
 
-@synthesize iCadeState=_iCadeState, delegate=_delegate, active;
+@synthesize iCadeState=_iCadeState, delegate=_delegate, active, actionLoop = _actionLoop;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -42,6 +46,7 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+    self.actionLoop = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(checkCurrentState:) userInfo:nil repeats:YES];
     
     return self;
 }
@@ -132,6 +137,34 @@ static const char *OFF_STATES = "eczqtrfnmpgv";
         [self resignFirstResponder];
         [self becomeFirstResponder];
     }
+}
+
+//We check if the current state contains a specific state.
+//In this case, we remove the State and we notify the delegate
+- (void)compareState:(iCadeState *)currentState withState:(iCadeState)testState {
+    if ((testState & *currentState) == testState) {
+        NSLog(@"This is the currentState: %i and the  testState: %i", *currentState, testState);
+        *currentState &= ~testState;
+        if (_delegateFlags.stateChanged) {
+            [_delegate stateChanged:testState];
+        } else {
+            if (_delegateFlags.buttonDown) {
+                [_delegate buttonDown:testState];
+            }
+        }
+    }
+}
+
+- (void)checkCurrentState:(NSTimer*)theTimer {
+    iCadeState currentState = _iCadeState;
+    NSLog(@" \n\n\n\n\n\nThis is the currentState: %i", currentState);
+    
+    //We begin with the composition (UpRight).
+    //Else, we would have sent 2 separate actions instead of the composition
+    for (int i = 0; i<16; i++) {
+        [self compareState:&currentState withState:ICADE_STATES[i]];    
+    }
+    
 }
 
 - (void)deleteBackward {
